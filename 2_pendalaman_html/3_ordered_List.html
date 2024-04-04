@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar Ordered List</title>
+    </head>
+
+    <body>
+        <!-- Ordered list digunakan untuk membuat list yang mementingkan urutan. Contohnya, membuat daftar instruksi langkah demi langkah sehingga dibutuhkan urutan yang sesuai. Ordered list bekerja seperti unordered list, tetapi perbedaannya adalah pada tiap item menampilkan angka bukan sebuah bullet. Angka yang ditampilkan, otomatis berurut tiap item-nya sehingga kita tidak perlu menuliskan secara kasar urutan nomornya. Hal ini tentu mempermudah kita untuk mengorganisasi tiap itemnya.
+
+Untuk menetapkan konten sebagai ordered list kita gunakan <ol></ol>. Sama seperti unordered list, tiap item dalam list ditetapkan dengan menggunakan tags <li></li> -->
+
+        <ol>
+            <li>Langkah pertama</li>
+            <li>Langkah kedua</li>
+            <li>Langkah ketiga</li>
+            <li>Langkah selanjutnya</li>
+        </ol>
+
+        <!-- Pada ordered list, tipe urutan angkanya dapat kita atur melalui sebuah atribut type. Contohnya, selain nomor, urutan angka dapat diganti dengan alfabet ataupun angka romawi. -->
+
+        <ol type="I">
+            <li>Langkah pertama</li>
+            <li>Langkah kedua</li>
+            <li>Langkah ketiga</li>
+            <li>Langkah selanjutnya</li>
+        </ol>
+
+        <ol type="A">
+            <li>Langkah pertama</li>
+            <li>Langkah kedua</li>
+            <li>Langkah ketiga</li>
+            <li>Langkah selanjutnya</li>
+        </ol>
+
+        <!-- Selain tipe angka pada urutan, kita juga bisa menetapkan nilai awal pada sebuah ordered list dengan menggunakan atribut start. Contohnya, jika kita ingin memulai sebuah list dari angka 7, kita tetapkan atribut start dengan nilai 7 pada elemen <ol>.  -->
+        <ol start="7">
+            <li>Langkah ketujuh</li>
+            <li>Langkah kedelapan</li>
+            <li>Langkah kesembilan</li>
+            <li>Langkah selanjutnya</li>
+        </ol>
+
+        <!-- kita dapat menambahkan atribut reversed pada elemen <ol> untuk membuat urutan dalam sebuah list terbalik. Atribut ini berbeda dengan atribut yang lain (yang sudah dibahas sebelumnya), atribut ini tidak memerlukan sebuah nilai ketika menggunakannya. Atribut ini hanya menandakan sebuah list untuk membalikkan urutan angka pada tiap item-nya. Berikut contoh penggunaannya. -->
+
+        <ol start="7" reversed>
+            <li>Langkah ketujuh</li>
+            <li>Langkah kedelapan</li>
+            <li>Langkah kesembilan</li>
+            <li>Langkah selanjutnya</li>
+        </ol>
+    </body>
+
+</html>
