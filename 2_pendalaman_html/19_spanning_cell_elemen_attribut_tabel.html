@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tabel Spanning Cell & Elemen dan Atribut pada Tabel</title>
+    </head>
+
+    <body>
+        <!-- Column Spans -->
+        <!-- Untuk merentangkan sebuah kolom (column spanning) kita bisa menggunakan atribut colspan pada elemen <td> atau <th>. Berikut adalah contoh untuk penggunaan colspan sehingga sebuah header mencakup dua kolom. -->
+
+        <table>
+            <tr>
+                <th>18:00</th>
+                <th>19:00</th>
+                <th>20:00</th>
+            </tr>
+            <tr>
+                <td colspan="2">Avenger Infinity Wars</td>
+                <td>It Chapter 2</td>
+            </tr>
+            <tr>
+                <td>One Piece: Stampede</td>
+                <td>Weathering With You</td>
+                <td>Gundala</td>
+            </tr>
+            <tr>
+                <td>Gundala</td>
+                <td colspan="2">Avenger Infinity Wars</td>
+            </tr>
+        </table>
+
+        <br /><br /><br />
+
+        <!-- Row Spans -->
+        <!-- Untuk merentangkan sebuah baris (row spanning) kita dapat menggunakan atribut rowspan. Mirip seperti column spanning, tetapi atribut ini akan merentangkan sebuah sel ke bawah. Berikut contohnya. -->
+        <table border="1">
+            <tr>
+                <th rowspan="3">18:00</th>
+                <td>Avenger Infinity Wars</td>
+            </tr>
+            <tr>
+                <td>One Piece: Stampede</td>
+            </tr>
+            <tr>
+                <td>Gundala</td>
+            </tr>
+        </table>
+
+        <!-- Elemen dan Atribut pada Tabel
+        
+        table = Menetapkan elemen tabel.
+        td = Menetapkan sebuah sel dalam baris tabel.
+            colspan=”number” = Jumlah kolom yang dicakup oleh sel.
+            rowspan=”number” = Jumlah baris yang dicakup oleh sel.
+            headers=”nama header” = Mengasosiasikan data sel dengan header.
+        th = Menetapkan header yang terkait dengan baris atau kolom.
+            colspan=”number” = Jumlah kolom yang dicakup oleh sel.
+            rowspan=”number” = Jumlah baris yang dicakup oleh sel.
+            headers=”nama header” = Mengasosiasikan data sel dengan header.
+            scope=”row|col|rowgroup|colgroup” = Mengasosiasikan header dengan baris, kelompok baris, kolom, atau kelompok kolom.
+        tr = Menetapkan baris dalam tabel.
+        caption = Menetapkan judul tabel.
+        col = Menetapkan properti kolom tabel.
+        colgroup = Menetapkan kelompok kolom dalam tabel
+        tbody = Menetapkan bagian tubuh tabel.
+        tfoot = Menetapkan bagian footer tabel.
+        thead = Menetapkan bagian kepala tabel. 
+    -->
+
+        <br /><br /><br />
+
+        <!-- Implementasi Tabel -->
+        <table border="1">
+            <caption>Contoh Tabel</caption>
+            <colgroup>
+                <col style="background-color: lightblue;">
+                <col style="background-color: lightgreen;">
+                <col style="background-color: lightpink;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">18:00</th>
+                    <th scope="col">19:00</th>
+                    <th scope="col">20:00</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">Avenger Infinity Wars</td>
+                    <td>It Chapter 2</td>
+                </tr>
+                <tr>
+                    <td>One Piece: Stampede</td>
+                    <td>Weathering With You</td>
+                    <td>Gundala</td>
+                </tr>
+                <tr>
+                    <td>Gundala</td>
+                    <td colspan="2">Avenger Infinity Wars</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Movies: 6</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </body>
+
+</html>
